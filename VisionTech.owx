@@ -1,0 +1,1654 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lilianacr/ontologies/2026/6/VisionTech"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lilianacr/ontologies/2026/6/VisionTech">
+    <Prefix name="" IRI="http://www.semanticweb.org/lilianacr/ontologies/2026/6/VisionTech/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Alerta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlertaVibratoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Familiar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notificacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotificacionAdvertencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotificacionEmergencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotificacionEstado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotificacionMovil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obstaculo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObstaculoAlto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObstaculoBajo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObstaculoFijo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObstaculoMedio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObstaculoMovil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonaConDiscapacidadVisual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riesgo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiesgoAlto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiesgoBajo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiesgoInmediato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiesgoModerado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorDistancia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorVL53L0X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Usuario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VibracionFuerte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VibracionMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VibracionSuave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisionTech"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#acompaña"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activaVibracion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#alertaA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#clasificaObstaculo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#detecta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#determinaNivelRiesgo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generaAlerta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generaNotificacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#informaRiesgo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#monitorea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produceRiesgo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recibeNotificacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#utilizaSensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AlertaVibratoria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Notificacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Obstaculo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Riesgo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Usuario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#correo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripcionObstaculo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distanciaDetectada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distanciaObstaculo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#estadoSensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fechaEnvio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fechaLectura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#intensidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mensaje"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nivelRiesgo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#prioridad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valorRiesgo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdvertenciaObstaculoMedio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arbol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Automovil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Banca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Banqueta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basurero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bicicleta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edificio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EmergenciaRiesgoInmediato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Escalon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Familiar01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Familiar02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Familiar03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maceta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NotificacionMovil_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NotificacionMovil_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NotificacionMovil_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pared"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PersonaCaminando"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piedra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PuertaAlta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResgoAlto_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoBajo_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoBajo_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoInmediato_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoModerado_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiesgoModerado_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Riesgoinmediato_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SensorVL53L0X_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Usuario01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Usuario02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Usuario03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionMedia_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionMedia_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionMedia_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionSuave_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionSuave_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibracionSuave_03"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alerta"/>
+        <Class IRI="#VisionTech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlertaVibratoria"/>
+        <Class IRI="#Alerta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Familiar"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Notificacion"/>
+        <Class IRI="#VisionTech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotificacionAdvertencia"/>
+        <Class IRI="#Notificacion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotificacionEmergencia"/>
+        <Class IRI="#Notificacion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotificacionEstado"/>
+        <Class IRI="#Notificacion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotificacionMovil"/>
+        <Class IRI="#Alerta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obstaculo"/>
+        <Class IRI="#VisionTech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObstaculoAlto"/>
+        <Class IRI="#Obstaculo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObstaculoBajo"/>
+        <Class IRI="#Obstaculo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObstaculoFijo"/>
+        <Class IRI="#Obstaculo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObstaculoMedio"/>
+        <Class IRI="#Obstaculo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObstaculoMovil"/>
+        <Class IRI="#Obstaculo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonaConDiscapacidadVisual"/>
+        <Class IRI="#Usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riesgo"/>
+        <Class IRI="#VisionTech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiesgoAlto"/>
+        <Class IRI="#Riesgo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiesgoBajo"/>
+        <Class IRI="#Riesgo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiesgoInmediato"/>
+        <Class IRI="#Riesgo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiesgoModerado"/>
+        <Class IRI="#Riesgo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#VisionTech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorDistancia"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorVL53L0X"/>
+        <Class IRI="#SensorDistancia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Usuario"/>
+        <Class IRI="#VisionTech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VibracionFuerte"/>
+        <Class IRI="#AlertaVibratoria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VibracionMedia"/>
+        <Class IRI="#AlertaVibratoria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VibracionSuave"/>
+        <Class IRI="#AlertaVibratoria"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#NotificacionAdvertencia"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionAdvertencia"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoMedio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoFijo"/>
+        <NamedIndividual IRI="#Arbol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoMovil"/>
+        <NamedIndividual IRI="#Automovil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoMedio"/>
+        <NamedIndividual IRI="#Banca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoBajo"/>
+        <NamedIndividual IRI="#Banqueta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoMedio"/>
+        <NamedIndividual IRI="#Basurero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoMovil"/>
+        <NamedIndividual IRI="#Bicicleta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoAlto"/>
+        <NamedIndividual IRI="#Camion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoAlto"/>
+        <NamedIndividual IRI="#Edificio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionEmergencia"/>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionEmergencia"/>
+        <NamedIndividual IRI="#EmergenciaRiesgoInmediato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoBajo"/>
+        <NamedIndividual IRI="#Escalon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionEstado"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionEstado"/>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Familiar"/>
+        <NamedIndividual IRI="#Familiar01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Familiar"/>
+        <NamedIndividual IRI="#Familiar02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Familiar"/>
+        <NamedIndividual IRI="#Familiar03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoMedio"/>
+        <NamedIndividual IRI="#Maceta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionMovil"/>
+        <NamedIndividual IRI="#NotificacionMovil_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionMovil"/>
+        <NamedIndividual IRI="#NotificacionMovil_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotificacionMovil"/>
+        <NamedIndividual IRI="#NotificacionMovil_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoFijo"/>
+        <NamedIndividual IRI="#Pared"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoMovil"/>
+        <NamedIndividual IRI="#PersonaCaminando"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoBajo"/>
+        <NamedIndividual IRI="#Piedra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoFijo"/>
+        <NamedIndividual IRI="#Poste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObstaculoAlto"/>
+        <NamedIndividual IRI="#PuertaAlta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoAlto"/>
+        <NamedIndividual IRI="#ResgoAlto_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoAlto"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoAlto"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoBajo"/>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoBajo"/>
+        <NamedIndividual IRI="#RiesgoBajo_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoBajo"/>
+        <NamedIndividual IRI="#RiesgoBajo_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoInmediato"/>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoInmediato"/>
+        <NamedIndividual IRI="#RiesgoInmediato_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoModerado"/>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoModerado"/>
+        <NamedIndividual IRI="#RiesgoModerado_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoModerado"/>
+        <NamedIndividual IRI="#RiesgoModerado_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiesgoInmediato"/>
+        <NamedIndividual IRI="#Riesgoinmediato_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SensorVL53L0X"/>
+        <NamedIndividual IRI="#SensorVL53L0X_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonaConDiscapacidadVisual"/>
+        <NamedIndividual IRI="#Usuario01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonaConDiscapacidadVisual"/>
+        <NamedIndividual IRI="#Usuario02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonaConDiscapacidadVisual"/>
+        <NamedIndividual IRI="#Usuario03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionFuerte"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionFuerte"/>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionFuerte"/>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionMedia"/>
+        <NamedIndividual IRI="#VibracionMedia_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionMedia"/>
+        <NamedIndividual IRI="#VibracionMedia_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionMedia"/>
+        <NamedIndividual IRI="#VibracionMedia_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionSuave"/>
+        <NamedIndividual IRI="#VibracionSuave_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionSuave"/>
+        <NamedIndividual IRI="#VibracionSuave_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VibracionSuave"/>
+        <NamedIndividual IRI="#VibracionSuave_03"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alertaA"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+        <NamedIndividual IRI="#Usuario01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoMedio"/>
+        <NamedIndividual IRI="#Usuario01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Arbol"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Automovil"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Banca"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Banqueta"/>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Bicicleta"/>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Camion"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Edificio"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alertaA"/>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+        <NamedIndividual IRI="#Familiar01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alertaA"/>
+        <NamedIndividual IRI="#EmergenciaRiesgoInmediato"/>
+        <NamedIndividual IRI="#Familiar02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Escalon"/>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+        <NamedIndividual IRI="#Usuario01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaNotificacion"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+        <NamedIndividual IRI="#NotificacionMovil_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+        <NamedIndividual IRI="#Usuario02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaNotificacion"/>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+        <NamedIndividual IRI="#NotificacionMovil_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acompaña"/>
+        <NamedIndividual IRI="#Familiar01"/>
+        <NamedIndividual IRI="#Usuario01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acompaña"/>
+        <NamedIndividual IRI="#Familiar02"/>
+        <NamedIndividual IRI="#Usuario02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acompaña"/>
+        <NamedIndividual IRI="#Familiar03"/>
+        <NamedIndividual IRI="#Usuario03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+        <NamedIndividual IRI="#NotificacionMovil_01"/>
+        <NamedIndividual IRI="#Usuario01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+        <NamedIndividual IRI="#NotificacionMovil_02"/>
+        <NamedIndividual IRI="#Usuario02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enviaNotificacion"/>
+        <NamedIndividual IRI="#NotificacionMovil_03"/>
+        <NamedIndividual IRI="#Usuario03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Pared"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#PersonaCaminando"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Piedra"/>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#Poste"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generaAlerta"/>
+        <NamedIndividual IRI="#PuertaAlta"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#ResgoAlto_03"/>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+        <NamedIndividual IRI="#VibracionSuave_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoBajo_02"/>
+        <NamedIndividual IRI="#VibracionSuave_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoBajo_03"/>
+        <NamedIndividual IRI="#VibracionSuave_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoInmediato_02"/>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+        <NamedIndividual IRI="#VibracionMedia_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#RiesgoModerado_02"/>
+        <NamedIndividual IRI="#VibracionMedia_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#Riesgoinmediato_03"/>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#activaVibracion"/>
+        <NamedIndividual IRI="#Riesgoinmediato_03"/>
+        <NamedIndividual IRI="#VibracionMedia_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#detecta"/>
+        <NamedIndividual IRI="#SensorVL53L0X_01"/>
+        <NamedIndividual IRI="#Bicicleta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#detecta"/>
+        <NamedIndividual IRI="#SensorVL53L0X_01"/>
+        <NamedIndividual IRI="#Poste"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recibeNotificacion"/>
+        <NamedIndividual IRI="#Usuario01"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recibeNotificacion"/>
+        <NamedIndividual IRI="#Usuario02"/>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recibeNotificacion"/>
+        <NamedIndividual IRI="#Usuario03"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionMedia_01"/>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionMedia_02"/>
+        <NamedIndividual IRI="#RiesgoModerado_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionMedia_03"/>
+        <NamedIndividual IRI="#RiesgoModerado_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionSuave_01"/>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionSuave_02"/>
+        <NamedIndividual IRI="#RiesgoBajo_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#respondeConVibracion"/>
+        <NamedIndividual IRI="#VibracionSuave_03"/>
+        <NamedIndividual IRI="#RiesgoBajo_03"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Notificacion"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+        <Literal>Obstáculo detectado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mensaje"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+        <Literal>Obstáculo detectado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#prioridad"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoDetectado"/>
+        <Literal>Media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Notificacion"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoMedio"/>
+        <Literal>Obstáculo detectado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mensaje"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoMedio"/>
+        <Literal>Obstáculo a distancia media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#prioridad"/>
+        <NamedIndividual IRI="#AdvertenciaObstaculoMedio"/>
+        <Literal>Media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Arbol"/>
+        <Literal>Árbol en la acera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Arbol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Automovil"/>
+        <Literal>Automóvil circulando</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Automovil"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Banca"/>
+        <Literal>Banca en zona peatonal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Banca"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Basurero"/>
+        <Literal>Basurero público</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Basurero"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Bicicleta"/>
+        <Literal>Bicicleta en movimiento</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Bicicleta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">120.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Camion"/>
+        <Literal>Camión estacionado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Camion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Edificio"/>
+        <Literal>Fachada de edificio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Edificio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Notificacion"/>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+        <Literal>Emergencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mensaje"/>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+        <Literal>Obstáculo muy cercano</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#prioridad"/>
+        <NamedIndividual IRI="#EmergenciaObstaculoCercano"/>
+        <Literal>Alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Notificacion"/>
+        <NamedIndividual IRI="#EmergenciaRiesgoInmediato"/>
+        <Literal>Emergencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mensaje"/>
+        <NamedIndividual IRI="#EmergenciaRiesgoInmediato"/>
+        <Literal>Riesgo inmediato detectado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#prioridad"/>
+        <NamedIndividual IRI="#EmergenciaRiesgoInmediato"/>
+        <Literal>Alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Escalon"/>
+        <Literal>Escalón en la banqueta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Escalon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Notificacion"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+        <Literal>Activo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mensaje"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+        <Literal>Sistema activo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#prioridad"/>
+        <NamedIndividual IRI="#EstadoSistemaActivo"/>
+        <Literal>Baja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Notificacion"/>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+        <Literal>Inactivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mensaje"/>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+        <Literal>Sistema inactivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#prioridad"/>
+        <NamedIndividual IRI="#EstadoSistemaInactivo"/>
+        <Literal>Baja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#correo"/>
+        <NamedIndividual IRI="#Familiar01"/>
+        <Literal>ejemplo@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Familiar01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Familiar01"/>
+        <Literal>Pedro Colula Zamora</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#correo"/>
+        <NamedIndividual IRI="#Familiar02"/>
+        <Literal>ejemplo@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Familiar02"/>
+        <Literal>Pedro Lopez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Familiar02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#correo"/>
+        <NamedIndividual IRI="#Familiar03"/>
+        <Literal>ejemplo@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Familiar03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Familiar03"/>
+        <Literal>Ana Hernandez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Maceta"/>
+        <Literal>Maceta decorativa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Maceta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Pared"/>
+        <Literal>Pared de concreto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Pared"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#PersonaCaminando"/>
+        <Literal>Persona caminando frente al usuario</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#PersonaCaminando"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Piedra"/>
+        <Literal>Piedra sobre el camino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Piedra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#Poste"/>
+        <Literal>Poste de alumbrado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#Poste"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <NamedIndividual IRI="#PuertaAlta"/>
+        <Literal>Puerta de gran altura</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <NamedIndividual IRI="#PuertaAlta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#ResgoAlto_03"/>
+        <Literal>alto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#ResgoAlto_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+        <Literal>alto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoAlto_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+        <Literal>alto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoAlto_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+        <Literal>Bajo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoBajo_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoBajo_02"/>
+        <Literal>bajo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoBajo_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoBajo_03"/>
+        <Literal>bajo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoBajo_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+        <Literal>inmediato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoInmediato_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoInmediato_02"/>
+        <Literal>inmediato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoInmediato_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+        <Literal>moderado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoModerado_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <NamedIndividual IRI="#RiesgoModerado_02"/>
+        <Literal>moderado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#RiesgoModerado_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorRiesgo"/>
+        <NamedIndividual IRI="#Riesgoinmediato_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4}</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanciaDetectada"/>
+        <NamedIndividual IRI="#SensorVL53L0X_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">&quot;100.0&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#correo"/>
+        <NamedIndividual IRI="#Usuario01"/>
+        <Literal>ejemplo@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Usuario01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Usuario01"/>
+        <Literal>Felipa Hernandez Colula</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#correo"/>
+        <NamedIndividual IRI="#Usuario02"/>
+        <Literal>ejemplo@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Usuario02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Usuario02"/>
+        <Literal>Monica Nanco Medel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#correo"/>
+        <NamedIndividual IRI="#Usuario03"/>
+        <Literal>Isidro Hernández Colula</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Usuario03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Usuario03"/>
+        <Literal>Isidro Hernández Colula</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionFuerte_01"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionFuerte_02"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionFuerte_03"/>
+        <Literal>baja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionMedia_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionMedia_01"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionMedia_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionMedia_02"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionMedia_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionMedia_03"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionSuave_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionSuave_01"/>
+        <Literal>baja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionSuave_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionSuave_02"/>
+        <Literal>baja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#VibracionSuave_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidad"/>
+        <NamedIndividual IRI="#VibracionSuave_03"/>
+        <Literal>baja</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#correo"/>
+        <DataProperty IRI="#Usuario"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <DataProperty IRI="#Obstaculo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#distanciaDetectada"/>
+        <DataProperty IRI="#Sensor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <DataProperty IRI="#Obstaculo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duracion"/>
+        <DataProperty IRI="#AlertaVibratoria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#edad"/>
+        <DataProperty IRI="#Usuario"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#estadoSensor"/>
+        <DataProperty IRI="#Sensor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fechaEnvio"/>
+        <DataProperty IRI="#Notificacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fechaLectura"/>
+        <DataProperty IRI="#Sensor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#intensidad"/>
+        <DataProperty IRI="#AlertaVibratoria"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mensaje"/>
+        <DataProperty IRI="#Notificacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <DataProperty IRI="#Riesgo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre"/>
+        <DataProperty IRI="#Usuario"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#prioridad"/>
+        <DataProperty IRI="#Notificacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#valorRiesgo"/>
+        <DataProperty IRI="#Riesgo"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#correo"/>
+        <Class IRI="#Usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <Class IRI="#Obstaculo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distanciaDetectada"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <Class IRI="#Obstaculo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracion"/>
+        <Class IRI="#AlertaVibratoria"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edad"/>
+        <Class IRI="#Usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estadoSensor"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fechaEnvio"/>
+        <Class IRI="#Notificacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fechaLectura"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#intensidad"/>
+        <Class IRI="#AlertaVibratoria"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mensaje"/>
+        <Class IRI="#Notificacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <Class IRI="#Riesgo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#prioridad"/>
+        <Class IRI="#Notificacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valorRiesgo"/>
+        <Class IRI="#Riesgo"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#correo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripcionObstaculo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#distanciaDetectada"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#distanciaObstaculo"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracion"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#edad"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#estadoSensor"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fechaEnvio"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fechaLectura"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#intensidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mensaje"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nivelRiesgo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#prioridad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valorRiesgo"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
